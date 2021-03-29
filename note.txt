@@ -1,0 +1,24 @@
+1. Reading queue
+- manage.py: https://docs.djangoproject.com/en/3.1/ref/django-admin/
+- setting.py: https://docs.djangoproject.com/en/3.1/topics/settings/
+- url: https://docs.djangoproject.com/en/3.1/topics/http/urls/
+- what is ASGI vs WSGI
+
+* https://docs.djangoproject.com/en/3.1/howto/deployment/asgi/
+* https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
+
+2. Django commands
+- django-admin startproject {mysite}: init project
+- python manage.py runserver: run server
+- python manage.py startapp polls: create new app
+- python manage.py migrate
+- python manage.py makemigrations polls: make migrations for poll's model
+- python manage.py sqlmigrate polls 0001: show query to create suitable tables for migrations number 0001
+- python manage.py migrate:really create those above table
+
+3. Note
+- To create an url the path to views must be declare in both project and app level
+- Need to add App's config to settings.py INSTALLED_APPS to active that app's model
+
+4. Question
+- Why set Timezone to japan already but the timezone in django.utils still UTC?
